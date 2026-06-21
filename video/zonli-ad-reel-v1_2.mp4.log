@@ -1,0 +1,135 @@
+
+---------------------------------
+-- Encoding Loop In After Effects (124.000) 
+---------------------------------
+
+AfterCodecs 1.11.0
+
+Exporting desc : 		 H264 Q=70 S=5 
+Exporting sound : 		 1
+Exporting alpha : 		 0
+Expecting frames count : 769
+
+Height cannot be odd ! (Pixel Format : YUV420)
+563 is odd ! But you can use 562 or 564
+Height cannot be odd ! (Pixel Format : YUV420)
+563 is odd ! But you can use 562 or 564
+
+Exported frames count : 	 0
+Expected : 	 	 769
+Deleting Temporary Files :
+D:\作品集\GitHub1\26作品集资源\video\zonli-ad-reel-v1_2.mp4.video.mp4 -> 0
+D:\作品集\GitHub1\26作品集资源\video\zonli-ad-reel-v1_2.mp4.audio.aac -> 1
+
+---------------------------------
+-- Video Encoding 
+---------------------------------
+
+"C:\Program Files\Adobe\Common\Plug-ins\7.0\MediaCore\Autokroma AfterCodecs\ffkroma.exe"  -loglevel error  -benchmark -y -nostdin  -ffreport file="D\:\\作品集\\GitHub1\\26作品集资源\\video\\zonli-ad-reel-v1_2_0.log:level=48"  -f rawvideo -framerate 30 -video_size 1000x563 -pixel_format bgr32   -i -   -c:v libx264  -preset faster -pix_fmt yuv420p  -timecode 00:00:00:00  -metadata:s encoder="H264 Q=70 S=5 , AFC 1.11.0 4.4.23" -crf 15.3   -g 192  -bf 2      -x264-params b_pyramid=0 -vf setfield=prog   "D:\作品集\GitHub1\26作品集资源\video\zonli-ad-reel-v1_2.mp4.video.mp4"
+
+
+
+---------------------------------
+-- Audio encoding 
+---------------------------------
+
+"C:\Program Files\Adobe\Common\Plug-ins\7.0\MediaCore\Autokroma AfterCodecs\ffkroma.exe"  -loglevel error  -benchmark -y -nostdin  -ffreport file="D\:\\作品集\\GitHub1\\26作品集资源\\video\\zonli-ad-reel-v1_2_1.log:level=48"  -f s16le -ar 48000  -channels 1  -guess_layout_max 2  -i -  -c:a aac -b:a 128k "D:\作品集\GitHub1\26作品集资源\video\zonli-ad-reel-v1_2.mp4.audio.aac"
+
+ffkroma started on 2026-06-21 at 17:26:28
+Report written to "D:\作品集\GitHub1\26作品集资源\video\zonli-ad-reel-v1_2_1.log"
+Log level: 48
+Command line:
+"C:\\Program Files\\Adobe\\Common\\Plug-ins\\7.0\\MediaCore\\Autokroma AfterCodecs\\ffkroma.exe" -loglevel error -benchmark -y -nostdin -ffreport "file=D\\:\\\\\xe4\xbd\x9c\xe5\x93\x81\xe9\x9b\x86\\\\GitHub1\\\\26\xe4\xbd\x9c\xe5\x93\x81\xe9\x9b\x86\xe8\xb5\x84\xe6\xba\x90\\\\video\\\\zonli-ad-reel-v1_2_1.log:level=48" -f s16le -ar 48000 -channels 1 -guess_layout_max 2 -i - -c:a aac -b:a 128k "D:\\\xe4\xbd\x9c\xe5\x93\x81\xe9\x9b\x86\\GitHub1\\26\xe4\xbd\x9c\xe5\x93\x81\xe9\x9b\x86\xe8\xb5\x84\xe6\xba\x90\\video\\zonli-ad-reel-v1_2.mp4.audio.aac"
+ffkroma version 4.4-23 (33833ae537a4735bd152259916c8d518bf42d7aa) [windows-x86_64]
+Copyright (c) 2000-2021 the FFmpeg developers
+  Autokroma fork of ffmpeg for AfterCodecs https://autokroma.com/
+  built with clang version 12.0.1
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+Splitting the commandline.
+Reading option '-loglevel' ... matched as option 'loglevel' (set logging level) with argument 'error'.
+Reading option '-benchmark' ... matched as option 'benchmark' (add timings for benchmarking) with argument '1'.
+Reading option '-y' ... matched as option 'y' (overwrite output files) with argument '1'.
+Reading option '-nostdin' ... matched as option 'stdin' (enable or disable interaction on standard input) with argument 0.
+Reading option '-ffreport' ... matched as option 'ffreport' (generate a report) with argument 'file=D\:\\作品集\\GitHub1\\26作品集资源\\video\\zonli-ad-reel-v1_2_1.log:level=48'.
+Reading option '-f' ... matched as option 'f' (force format) with argument 's16le'.
+Reading option '-ar' ... matched as option 'ar' (set audio sampling rate (in Hz)) with argument '48000'.
+Reading option '-channels' ... matched as AVOption 'channels' with argument '1'.
+Reading option '-guess_layout_max' ... matched as option 'guess_layout_max' (set the maximum number of channels to try to guess the channel layout) with argument '2'.
+Reading option '-i' ... matched as input url with argument '-'.
+Reading option '-c:a' ... matched as option 'c' (codec name) with argument 'aac'.
+Reading option '-b:a' ... matched as option 'b' (video bitrate (please use -b:v)) with argument '128k'.
+Reading option 'D:\作品集\GitHub1\26作品集资源\video\zonli-ad-reel-v1_2.mp4.audio.aac' ... matched as output url.
+Finished splitting the commandline.
+Parsing a group of options: global .
+Applying option loglevel (set logging level) with argument error.
+Applying option benchmark (add timings for benchmarking) with argument 1.
+Applying option y (overwrite output files) with argument 1.
+Applying option nostdin (enable or disable interaction on standard input) with argument 0.
+Applying option ffreport (generate a report) with argument file=D\:\\作品集\\GitHub1\\26作品集资源\\video\\zonli-ad-reel-v1_2_1.log:level=48.
+Successfully parsed a group of options.
+Parsing a group of options: input url -.
+Applying option f (force format) with argument s16le.
+Applying option ar (set audio sampling rate (in Hz)) with argument 48000.
+Applying option guess_layout_max (set the maximum number of channels to try to guess the channel layout) with argument 2.
+Successfully parsed a group of options.
+Opening an input file: -.
+[s16le @ 00000245975ddb00] Opening 'pipe:' for reading
+[pipe @ 00000245975bf300] Setting default whitelist 'crypto,data'
+[s16le @ 00000245975ddb00] Before avformat_find_stream_info() pos: 0 bytes read:0 seeks:0 nb_streams:1
+[s16le @ 00000245975ddb00] After avformat_find_stream_info() pos: 0 bytes read:0 seeks:0 frames:0
+Guessed Channel Layout for Input Stream #0.0 : mono
+Input #0, s16le, from 'pipe:':
+  Duration: N/A, bitrate: 768 kb/s
+  Stream #0:0, 0, 1/48000: Audio: pcm_s16le, 48000 Hz, mono, s16, 768 kb/s
+Successfully opened the file.
+Parsing a group of options: output url D:\作品集\GitHub1\26作品集资源\video\zonli-ad-reel-v1_2.mp4.audio.aac.
+Applying option c:a (codec name) with argument aac.
+Applying option b:a (video bitrate (please use -b:v)) with argument 128k.
+Successfully parsed a group of options.
+Opening an output file: D:\作品集\GitHub1\26作品集资源\video\zonli-ad-reel-v1_2.mp4.audio.aac.
+[file @ 000002459767d1c0] Setting default whitelist 'file,crypto,data'
+Successfully opened the file.
+Stream mapping:
+  Stream #0:0 -> #0:0 (pcm_s16le (native) -> aac (native))
+cur_dts is invalid st:0 (0) [init:0 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid st:0 (0) [init:0 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+detected 20 logical cores
+[graph_0_in_0_0 @ 00000245976905c0] Setting 'time_base' to value '1/48000'
+[graph_0_in_0_0 @ 00000245976905c0] Setting 'sample_rate' to value '48000'
+[graph_0_in_0_0 @ 00000245976905c0] Setting 'sample_fmt' to value 's16'
+[graph_0_in_0_0 @ 00000245976905c0] Setting 'channel_layout' to value '0x4'
+[graph_0_in_0_0 @ 00000245976905c0] tb:1/48000 samplefmt:s16 samplerate:48000 chlayout:0x4
+[format_out_0_0 @ 0000024597690900] Setting 'sample_fmts' to value 'fltp'
+[format_out_0_0 @ 0000024597690900] Setting 'sample_rates' to value '96000|88200|64000|48000|44100|32000|24000|22050|16000|12000|11025|8000|7350'
+[format_out_0_0 @ 0000024597690900] auto-inserting filter 'auto_resampler_0' between the filter 'Parsed_anull_0' and the filter 'format_out_0_0'
+[AVFilterGraph @ 00000245975d2180] query_formats: 4 queried, 6 merged, 3 already done, 0 delayed
+[auto_resampler_0 @ 0000024597690c40] [SWR @ 0000024597692a80] Using s16p internally between filters
+[auto_resampler_0 @ 0000024597690c40] ch:1 chl:mono fmt:s16 r:48000Hz -> ch:1 chl:mono fmt:fltp r:48000Hz
+Output #0, adts, to 'D:\作品集\GitHub1\26作品集资源\video\zonli-ad-reel-v1_2.mp4.audio.aac':
+  Metadata:
+    encoder         : Lavf58.76.100
+  Stream #0:0, 0, 1/48000: Audio: aac (LC), 48000 Hz, mono, fltp, 128 kb/s
+    Metadata:
+      encoder         : Lavc58.134.100 aac
+[out_0_0 @ 0000024597690780] EOF on sink link out_0_0:default.
+size=       0kB time=00:00:00.00 bitrate=N/A speed=   0x    No more output streams to write to, finishing.
+size=       0kB time=00:00:00.00 bitrate=N/A speed=   0x    
+video:0kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
+Input file #0 (pipe:):
+  Input stream #0:0 (audio): 0 packets read (0 bytes); 0 frames decoded (0 samples); 
+  Total: 0 packets (0 bytes) demuxed
+Output file #0 (D:\作品集\GitHub1\26作品集资源\video\zonli-ad-reel-v1_2.mp4.audio.aac):
+  Output stream #0:0 (audio): 0 frames encoded (0 samples); 0 packets muxed (0 bytes); 
+  Total: 0 packets (0 bytes) muxed
+bench: utime=0.000s stime=0.000s rtime=0.002s
+0 frames successfully decoded, 0 decoding errors
+bench: maxrss=6316kB
+[AVIOContext @ 000002459767dc00] Statistics: 0 seeks, 0 writeouts
+[aac @ 00000245975f1e00] Qavg: nan
+[AVIOContext @ 00000245975bed80] Statistics: 0 bytes read, 0 seeks
